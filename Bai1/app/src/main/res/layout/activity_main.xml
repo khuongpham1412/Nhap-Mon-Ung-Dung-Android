@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tool_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="10dp"
+        android:fitsSystemWindows="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:menu="@menu/nav_menu"
+        app:title="Multi Notes" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/linearRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="LinearLayout"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/relativeRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="RelativeLayout"
+            android:layout_weight="1"/>
+
+        <RadioButton
+            android:id="@+id/tableRadioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="TableLayout"
+            android:layout_weight="1"/>
+
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>

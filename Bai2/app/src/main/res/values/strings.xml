@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">BT2</string>
+    <string name="cancel">Cancel</string>
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="notification_channel_description">Mô tả kênh thông báo</string>
+</resources>

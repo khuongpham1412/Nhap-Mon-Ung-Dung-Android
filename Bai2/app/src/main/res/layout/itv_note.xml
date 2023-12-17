@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/itv_img_note"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/itv_content_note" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itv_content_note"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/note_itv_bg"
+        android:elevation="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent=".9" >
+
+        <TextView
+            android:id="@+id/itv_tv_title_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:maxWidth="250dp"
+            app:layout_constraintHorizontal_bias=".1"
+            app:layout_constraintVertical_bias=".15"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itv_tv_description_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description ..."
+            android:textSize="13sp"
+            android:maxWidth="250dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/itv_tv_title_note"
+            app:layout_constraintTop_toBottomOf="@+id/itv_tv_title_note"
+            app:layout_constraintVertical_bias="0" />
+
+        <TextView
+            android:id="@+id/itv_tv_date_time_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/itv_tv_description_note"
+            app:layout_constraintTop_toBottomOf="@+id/itv_tv_description_note"
+            app:layout_constraintVertical_bias=".7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
